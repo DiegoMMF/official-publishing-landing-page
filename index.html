@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta property="og:image" content="https://bit.ly/31TVNVg" />
+    <meta
+      property="og:description"
+      content="freeCode Camp curriculum excercise by DiegoMMF"
+    />
+    <meta property="og:title" content="Product Landing Page" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product Landing Page</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav id="nav-bar">
+        <!-- <h3 class="theme-font brand"><span class="thin">Diego</span><span class="bold">Maldini</span><span class="thin">Freyre</span></h3> -->
+        <img class="brand" src="./img/dmf-black-letters.png" alt="" />
+        <!-- User Story #3 -->
+        <ul>
+          <!-- User Story #4 -->
+          <li class="menu-item">
+            <a class="nav-link theme-font" href="#info-autor">Bio</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link theme-font" href="#blog">Blog</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link theme-font" href="#libros">Libros</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link theme-font" href="#form">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="container">
+        <header id="header">
+          <!-- User Story #1 -->
+          <img
+            id="header-img"
+            src="./img/livres.gif"
+            alt=""
+          /><!-- User Story #2 -->
+          <div>
+            <h1 class="header-text theme-font">Hola!</h1>
+            <h3 class="header-text"><i>Vamos a leer...</i></h3>
+          </div>
+        </header>
+
+        <div id="video-frame">
+          <!-- User Story #6 -->
+          <h2 class="theme-font">Video presentación del libro</h2>
+          <h2 class="theme-font">Taichí, Aquí y Ahora</h2>
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/XWYO3HgG00Y"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <section>
+          <h2 class="theme-font">Los libros del Autor</h2>
+          <div id="libros">
+            <div class="book-card">
+              <img
+                class="cover"
+                src="./img/diegommf-treatise-cover.png"
+                alt="Portada tratado de taichí"
+              />
+              <div class="book-info">
+                <h3 class="theme-font">Taichí, aquí y ahora</h3>
+                <br />
+                <p>
+                  Tratado muy cercano y completo, escrito desde la mirada del
+                  practi<wbr />cante, que ayudará al lector a llevar una vida
+                  relajada y atenta a lo que es más impor<wbr />tante, sea o no,
+                  practi<wbr />cante de taichí.
+                </p>
+              </div>
+            </div>
+            <div class="book-card">
+              <img
+                class="cover"
+                src="./img/diegommf-poetry-cover.png"
+                alt="Portada del poemario"
+              />
+              <div class="book-info">
+                <h3 class="theme-font">Líneas ígneas</h3>
+                <br />
+                <p>
+                  Selección de los mejores poemas del au<wbr />tor es<wbr />critos
+                  hasta el 2018, inclusive. Irreme<wbr />diable<wbr />mente
+                  poblados de piel, corazón y pensa<wbr />miento, como no podía
+                  ser de otra manera.
+                </p>
+              </div>
+            </div>
+            <div class="book-card">
+              <img
+                class="cover"
+                src="./img/diegommf-thriller-cover.png"
+                alt="Portada novela de zombies"
+              />
+              <div class="book-info">
+                <h3 class="theme-font">Los Nuevos</h3>
+                <br />
+                <p>
+                  Suspenso y mucha acción con la cultu<wbr />ra zombie como excusa
+                  para reflex<wbr />ionar sobre nuestra propia conscien<wbr />cia,
+                  pero ninguno de los tan cansadores y previsibles clichés del
+                  género.
+                </p>
+              </div>
+            </div>
+            <div class="book-card">
+              <img
+                class="cover"
+                src="./img/diegommf-essay-cover.png"
+                alt="Portada ensayo sobre el rol del autor"
+              />
+              <div class="book-info">
+                <h3 class="theme-font">El rol del Autor</h3>
+                <br />
+                <p>
+                  Ensayo que contiene una argumen<wbr />tación convincente de que
+                  todos nosotros contri<wbr />buimos de manera notable -aunque
+                  subrepticia- a la transfor<wbr />mación social en toda su
+                  amplitud.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </main>
+
+      <div id="blog">
+        <p>Escritos del Autor disponibles online:</p>
+        <a href="https://ensayosypoemas.wordpress.com" target="_blank">
+          <h3>Blog Ensayos & Poemas</h3>
+        </a>
+        <img src="./img/wp-icon.png" alt="" />
+      </div>
+
+      <form
+        class="gray-background"
+        action="https://ensayosypoemas.wordpress.com"
+        id="form"
+      >
+        <!-- User Story #7 -->
+        <label for="email">
+          <p class="theme-font">Ingresa tu correo para contactarnos:</p>
+        </label>
+        <div>
+          <!-- User Story #8, #9, #10 -->
+          <input type="email" name="email" id="email" placeholder="@" />
+          <input
+            type="submit"
+            id="submit"
+            value="Enviar"
+            class="button"
+            href="https://www.freecodecamp.com/email-submit"
+          />
+        </div>
+        <!-- User Story #11 -->
+      </form>
+
+      <div id="info-autor">
+        <h2 id="bio-title" class="theme-font header-text">Bio...</h2>
+        <p>
+          Diego M. Maldini Freyre nació en Santafé, Argen<wbr />tina, el 22 de
+          abril de 1980. Escritor desde siempre; Actualmente se desempeña como
+          desarro<wbr />llador indepen<wbr />diente de software. También es
+          instructor de taiji-qigong y apasionado empren<wbr />dedor, auto<wbr />didacta
+          por naturaleza.
+        </p>
+        <p>
+          Estar siempre a dispo<wbr />sición de su curiosidad y avidez por lo
+          desconocido, lo ha llevado a recorrer durante varios años, pero de
+          forma inconclusa, varios estudios universi<wbr />tarios, entre los que
+          se destacan Ing. en Sistemas y Lic. en Letras, así como a prota<wbr />gonizar
+          numerosos empren<wbr />dimientos de la más variada naturaleza y
+          resultado, tales como una cerve<wbr />cería artesanal, una escuela de
+          taiji-qigong, una librería, una revista cultural y alguno que otro
+          programa de radio.
+        </p>
+        <p>
+          Actualmente, vive en la provincia de Córdoba y es padre de un bello
+          hijo que recién está recorriendo sus primeros pasos en esta vida.
+        </p>
+        <p>
+          El autor ha escrito cuatro títulos diferen<wbr />tes y posee otro más
+          en proyecto, sobre emprende<wbr />dorismo, todos bajo el mismo sello
+          editorial.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <img id="brand-footer" src="./img/dmf-lightgray-letters.png" alt="" />
+      <p class="theme-font">Copyright &copy; 2020</p>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
